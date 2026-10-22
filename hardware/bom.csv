@@ -18,7 +18,8 @@ Environment node,Vibration,ADXL345 accelerometer,2,250,Domestic online,3-5 days
 Environment node,Enclosure + power,IP65 ABS box + 12 V to 5 V supply,2,900,Local market,1-2 days
 Gateway,Edge computer,Raspberry Pi 4 Model B 4 GB + PSU + 32 GB card,1,6500,Domestic online,3-5 days
 Gateway,LoRa receiver,Heltec WiFi LoRa 32 V3 (USB serial to Pi),1,2200,Domestic online,3-5 days
-Rover-lite (stretch),Chassis + drive,4WD metal chassis with 12 V geared motors + motor driver,1,5300,Domestic online,5-7 days
+Rover-lite (stretch),Chassis + motors,4WD metal chassis with 4x 12 V geared DC motors,1,3500,Domestic online,5-7 days
+Rover-lite (stretch),Motor driver,Cytron MDD10A dual-channel 10 A DC motor driver,1,1800,Domestic online,3-5 days
 Rover-lite (stretch),Compute,Raspberry Pi 4 Model B 4 GB,1,5500,Domestic online,3-5 days
 Rover-lite (stretch),2D LiDAR,RPLIDAR C1 (or equivalent 360 deg 2D LiDAR),1,7500,Domestic online,5-10 days
 Rover-lite (stretch),Thermal camera,MLX90640 32x24 thermal array,1,5500,Domestic online,5-10 days
