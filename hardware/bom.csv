@@ -1,0 +1,27 @@
+subsystem,item,part / specification,qty,unit_inr,source,lead_time
+Wearable hub,MCU + LoRa radio,Heltec WiFi LoRa 32 V3 (ESP32-S3 + SX1262 865 MHz),2,2200,Domestic online,3-5 days
+Wearable hub,ECG front end,AD8232 single-lead ECG module + chest-strap electrodes,2,900,Domestic online,3-5 days
+Wearable hub,Pulse oximetry,MAX30102 reflective SpO2 / PPG module,2,250,Domestic online,3-5 days
+Wearable hub,IMU (fall / inactivity),MPU-6050 6-axis accel + gyro,2,150,Domestic online,3-5 days
+Wearable hub,Body temperature,MAX30205 clinical-grade temperature sensor,2,500,Domestic online,5-7 days
+Wearable hub,Battery,LiPo 603040 ~700 mAh with protection PCB,2,350,Domestic online,3-5 days
+Wearable hub,Alerts + SOS,Buzzer + vibration motor + tactile switch + LED,2,100,Local market,1 day
+Wearable hub,Enclosure + strap,PETG 3D print (hardware/cad) + elastic chest strap,2,400,In-house print,1-2 days
+Environment node,MCU + LoRa radio,Heltec WiFi LoRa 32 V3,2,2200,Domestic online,3-5 days
+Environment node,Methane,NDIR CH4 module 0-100 %LEL (e.g. Winsen MH-440D),2,4500,Domestic / import,7-21 days
+Environment node,Carbon monoxide,Electrochemical CO module (e.g. Winsen ZE07-CO),2,2000,Domestic / import,7-21 days
+Environment node,Oxygen,Electrochemical O2 module (e.g. Winsen ZE03-O2),2,3000,Domestic / import,7-21 days
+Environment node,Hydrogen sulfide,Electrochemical H2S module (e.g. Winsen ZE03-H2S),1,3000,Domestic / import,7-21 days
+Environment node,CO2 + temp + humidity,Sensirion SCD41 module,2,3200,Domestic online,5-7 days
+Environment node,Smoke / particulates,Plantower PMS5003,2,1800,Domestic online,5-7 days
+Environment node,Vibration,ADXL345 accelerometer,2,250,Domestic online,3-5 days
+Environment node,Enclosure + power,IP65 ABS box + 12 V to 5 V supply,2,900,Local market,1-2 days
+Gateway,Edge computer,Raspberry Pi 4 Model B 4 GB + PSU + 32 GB card,1,6500,Domestic online,3-5 days
+Gateway,LoRa receiver,Heltec WiFi LoRa 32 V3 (USB serial to Pi),1,2200,Domestic online,3-5 days
+Rover-lite (stretch),Chassis + drive,4WD metal chassis with 12 V geared motors + motor driver,1,5300,Domestic online,5-7 days
+Rover-lite (stretch),Compute,Raspberry Pi 4 Model B 4 GB,1,5500,Domestic online,3-5 days
+Rover-lite (stretch),2D LiDAR,RPLIDAR C1 (or equivalent 360 deg 2D LiDAR),1,7500,Domestic online,5-10 days
+Rover-lite (stretch),Thermal camera,MLX90640 32x24 thermal array,1,5500,Domestic online,5-10 days
+Rover-lite (stretch),Visual camera,Raspberry Pi Camera Module (8 MP),1,2000,Domestic online,3-5 days
+Rover-lite (stretch),Mesh relay radio,Heltec WiFi LoRa 32 V3,1,2200,Domestic online,3-5 days
+Rover-lite (stretch),Power,3S LiPo 5000 mAh + balance charger + BMS,1,4500,Domestic online,5-7 days
