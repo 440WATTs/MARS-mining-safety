@@ -1,0 +1,15 @@
+{
+  "note": "Synthetic scenario; every number depends on modelling assumptions in software/mars/sim.py",
+  "b2_first_warning_min": 16.3,
+  "b2_withdraw_order_min": 18.8,
+  "b2_b3_all_workers_out_min": 20.833333333333332,
+  "b2_true_danger_crossing_min": 34.3,
+  "lead_time_withdraw_to_danger_min": 15.5,
+  "sos_alert_min": 41.0,
+  "rover_on_scene_min": 45.3,
+  "packets": {
+    "sent": 2888,
+    "delivered": 2239,
+    "via_rover": 94
+  }
+}

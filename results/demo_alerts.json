@@ -1,0 +1,283 @@
+[
+  {
+    "t": 110,
+    "level": "Moderate",
+    "kind": "link_lost",
+    "zone": "C3",
+    "worker": "W07",
+    "title": "No data from W07 for 70 s",
+    "detail": "Last seen in C3; rover patrol will relay on its next pass",
+    "sop": [],
+    "workers_affected": [
+      "W07"
+    ]
+  },
+  {
+    "t": 350,
+    "level": "Moderate",
+    "kind": "link_lost",
+    "zone": "B3",
+    "worker": "W05",
+    "title": "No data from W05 for 70 s",
+    "detail": "Last seen in B3; rover patrol will relay on its next pass",
+    "sop": [],
+    "workers_affected": [
+      "W05"
+    ]
+  },
+  {
+    "t": 890,
+    "level": "Moderate",
+    "kind": "sensor_fault",
+    "zone": "C1",
+    "worker": null,
+    "title": "Sensor fault in C1: Carbon monoxide stuck",
+    "detail": "Reading excluded from trust; use hand-held gas testing in this zone until repaired",
+    "sop": []
+  },
+  {
+    "t": 980,
+    "level": "Moderate",
+    "kind": "zone",
+    "zone": "B2",
+    "worker": null,
+    "title": "Moderate risk in B2: methane rising",
+    "detail": "Methane 1.8 %LEL now (zone score 27/100); trend reaches danger level in ~78 min",
+    "sop": [
+      "Check main and auxiliary fan status; increase ventilation to the zone",
+      "Stop hot work and remove ignition sources in the zone",
+      "Re-test with a hand-held methanometer within 5 min"
+    ],
+    "predicted": true,
+    "eta_s": 4668,
+    "workers_affected": [
+      "W04",
+      "W03",
+      "W05"
+    ]
+  },
+  {
+    "t": 1130,
+    "level": "High",
+    "kind": "zone",
+    "zone": "B2",
+    "worker": null,
+    "title": "High risk in B2: methane rising",
+    "detail": "Methane 4.7 %LEL now (zone score 50/100); trend reaches danger level in ~18 min",
+    "sop": [
+      "Withdraw all persons from the zone and its return side",
+      "Isolate electrical power to the zone",
+      "Inform Manager / Overman; rescue team on standby",
+      "No re-entry until a competent person clears the zone"
+    ],
+    "predicted": true,
+    "eta_s": 1099,
+    "workers_affected": [
+      "W04",
+      "W03",
+      "W05"
+    ]
+  },
+  {
+    "t": 1140,
+    "level": "Moderate",
+    "kind": "link_lost",
+    "zone": "C3",
+    "worker": "W07",
+    "title": "No data from W07 for 70 s",
+    "detail": "Last seen in C3; rover patrol will relay on its next pass",
+    "sop": [],
+    "workers_affected": [
+      "W07"
+    ]
+  },
+  {
+    "t": 1150,
+    "level": "Moderate",
+    "kind": "zone",
+    "zone": "B3",
+    "worker": null,
+    "title": "Moderate risk in B3: methane rising",
+    "detail": "Methane 2.5 %LEL now (zone score 28/100); trend reaches danger level in ~77 min",
+    "sop": [
+      "Check main and auxiliary fan status; increase ventilation to the zone",
+      "Stop hot work and remove ignition sources in the zone",
+      "Re-test with a hand-held methanometer within 5 min"
+    ],
+    "predicted": true,
+    "eta_s": 4618,
+    "workers_affected": [
+      "W05"
+    ]
+  },
+  {
+    "t": 1630,
+    "level": "High",
+    "kind": "zone",
+    "zone": "B3",
+    "worker": null,
+    "title": "High risk in B3: methane rising",
+    "detail": "Methane 6.9 %LEL now (zone score 50/100); trend reaches danger level in ~23 min",
+    "sop": [
+      "Withdraw all persons from the zone and its return side",
+      "Isolate electrical power to the zone",
+      "Inform Manager / Overman; rescue team on standby",
+      "No re-entry until a competent person clears the zone"
+    ],
+    "predicted": true,
+    "eta_s": 1361,
+    "workers_affected": []
+  },
+  {
+    "t": 1680,
+    "level": "Info",
+    "kind": "zone",
+    "zone": "A3",
+    "worker": null,
+    "title": "Scheduled blast in A3: carbon monoxide transient",
+    "detail": "Carbon monoxide 92.5 ppm now (zone score 68/100); re-entry hold until readings clear",
+    "sop": [
+      "Check for fire, spontaneous heating, diesel exhaust or recent blasting",
+      "Persons in the zone keep self-rescuers ready"
+    ],
+    "predicted": false,
+    "eta_s": null,
+    "workers_affected": []
+  },
+  {
+    "t": 1700,
+    "level": "Moderate",
+    "kind": "worker",
+    "zone": "A2",
+    "worker": "W02",
+    "title": "W02: estimated body temperature",
+    "detail": "Estimated body temperature 37.9 degC (worker score 31/100)",
+    "sop": [
+      "Rest in a cooler area; hydrate"
+    ],
+    "workers_affected": [
+      "W02"
+    ]
+  },
+  {
+    "t": 1900,
+    "level": "High",
+    "kind": "worker",
+    "zone": "A2",
+    "worker": "W02",
+    "title": "W02: estimated body temperature",
+    "detail": "Estimated body temperature 38.3 degC (worker score 52/100)",
+    "sop": [
+      "Remove worker from the hot zone; first aid for heat illness; medical team informed"
+    ],
+    "workers_affected": [
+      "W02"
+    ]
+  },
+  {
+    "t": 1910,
+    "level": "Critical",
+    "kind": "zone",
+    "zone": "B2",
+    "worker": null,
+    "title": "Critical risk in B2: methane",
+    "detail": "Methane 18.0 %LEL now (zone score 76/100); trend reaches danger level in ~2 min",
+    "sop": [
+      "Sound the evacuation alarm for the affected zones",
+      "Withdraw all persons from the zone and its return side",
+      "Isolate electrical power to the zone",
+      "Inform Manager / Overman; rescue team on standby",
+      "No re-entry until a competent person clears the zone"
+    ],
+    "predicted": false,
+    "eta_s": 146,
+    "workers_affected": []
+  },
+  {
+    "t": 2400,
+    "level": "Critical",
+    "kind": "worker",
+    "zone": "C2",
+    "worker": "W06",
+    "title": "W06: fall detected",
+    "detail": "Fall detected 1  (worker score 78/100)",
+    "sop": [
+      "Sound the evacuation alarm for the affected zones",
+      "Call the worker on radio / wearable buzzer",
+      "Nearest rover switches to rescue-assist and heads to last known zone",
+      "Rescue and medical teams dispatched with SOS bundle"
+    ],
+    "workers_affected": [
+      "W06"
+    ]
+  },
+  {
+    "t": 2460,
+    "level": "Critical",
+    "kind": "sos",
+    "zone": "C2",
+    "worker": "W06",
+    "title": "SOS: W06 in C2",
+    "detail": "HR 60 bpm, SpO2 93 %, temp 37.1 C, last zone C2, via direct link",
+    "sop": [
+      "Sound the evacuation alarm for the affected zones",
+      "Call the worker on radio / wearable buzzer",
+      "Nearest rover switches to rescue-assist and heads to last known zone",
+      "Rescue and medical teams dispatched with SOS bundle"
+    ],
+    "routed_to": [
+      "Control room",
+      "Rescue team",
+      "Medical team",
+      "Shift supervisor"
+    ],
+    "workers_affected": [
+      "W06"
+    ]
+  },
+  {
+    "t": 2690,
+    "level": "Critical",
+    "kind": "zone",
+    "zone": "B3",
+    "worker": null,
+    "title": "Critical risk in B3: methane",
+    "detail": "Methane 17.6 %LEL now (zone score 76/100); trend reaches danger level in ~4 min",
+    "sop": [
+      "Sound the evacuation alarm for the affected zones",
+      "Withdraw all persons from the zone and its return side",
+      "Isolate electrical power to the zone",
+      "Inform Manager / Overman; rescue team on standby",
+      "No re-entry until a competent person clears the zone"
+    ],
+    "predicted": false,
+    "eta_s": 249,
+    "workers_affected": []
+  },
+  {
+    "t": 2780,
+    "level": "Moderate",
+    "kind": "link_lost",
+    "zone": "C3",
+    "worker": "W07",
+    "title": "No data from W07 for 70 s",
+    "detail": "Last seen in C3; rover patrol will relay on its next pass",
+    "sop": [],
+    "workers_affected": [
+      "W07"
+    ]
+  },
+  {
+    "t": 3350,
+    "level": "Moderate",
+    "kind": "link_lost",
+    "zone": "C3",
+    "worker": "W07",
+    "title": "No data from W07 for 70 s",
+    "detail": "Last seen in C3; rover patrol will relay on its next pass",
+    "sop": [],
+    "workers_affected": [
+      "W07"
+    ]
+  }
+]
