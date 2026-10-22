@@ -24,6 +24,7 @@ HUB_L, HUB_W, HUB_H = 72.0, 48.0, 20.0     # outer envelope, mm
 WALL = 2.2
 LID_H = 5.0
 CORNER_R = 8.0
+LUG_W, LUG_H, LUG_BAR, SLOT_W = 13.0, 6.0, 4.5, 3.5
 
 
 def hub_base():
@@ -33,11 +34,14 @@ def hub_base():
                                                           centered=(True, True, False)) \
         .edges("|Z").fillet(CORNER_R - WALL)
     body = outer.cut(inner)
-    # strap lugs: 26 mm slots for a standard chest strap
+    # strap lugs: 26 mm slots for a standard chest strap. Rev B: outer bar
+    # widened 1.75 -> 4.5 mm and lug 5 -> 6 mm tall after the hand calc in
+    # hardware/calcs.py showed ~127 MPa at a 100 N strap snag (PETG ~35 MPa).
     for sx in (-1, 1):
-        lug = cq.Workplane("XY").box(8, 34, 5, centered=(True, True, False)).translate((sx * (HUB_L / 2 + 3), 0, 0)) \
-            .edges("|Z").fillet(2.0)
-        slot = cq.Workplane("XY").box(3.5, 26, 10).translate((sx * (HUB_L / 2 + 3.5), 0, 0))
+        lug = cq.Workplane("XY").box(LUG_W, 34, LUG_H, centered=(True, True, False)) \
+            .translate((sx * (HUB_L / 2 + LUG_W / 2 - 1), 0, 0)).edges("|Z").fillet(2.0)
+        slot_c = HUB_L / 2 + LUG_W - 1 - LUG_BAR - SLOT_W / 2
+        slot = cq.Workplane("XY").box(SLOT_W, 26, 20).translate((sx * slot_c, 0, 0))
         body = body.union(lug).cut(slot)
     # skin side: two ECG snap studs 40 mm apart + PPG/SpO2 window between them
     for sx in (-20, 20):

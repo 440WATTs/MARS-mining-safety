@@ -70,13 +70,13 @@ These numbers only show that the logic behaves as designed. They depend entirely
 
 | Parameter | Target | Basis |
 |---|---|---|
-| Wearable battery life | ≥ 12 h (8 h shift + 50 % margin) | ~32 mA estimated average on 700 mAh; to be measured |
+| Wearable battery life | ≥ 12 h (8 h shift + 50 % margin) | ~30.5 mA estimated average → ~19 h on 700 mAh (`hardware/calcs.py`); to be measured |
 | Telemetry interval | 10 s; fall/SOS sent immediately with 3 retries | `software/mars/sim.py` |
 | Radio | LoRa 865–867 MHz (India licence-exempt), SF7/125 kHz | 20-byte frame ≈ 57 ms airtime |
 | Hazard alert latency | < 15 s from sensor to control room | to be measured |
-| Wearable size / mass | 72 × 48 × 20 mm, < 80 g | CAD v0 |
+| Wearable size / mass | 72 × 48 × 20 mm body, < 80 g | CAD v0 rev B (strap-lug bar 4.5 mm, FoS ≈ 2.2 at 100 N snag) |
 | Gas channels per node | CH4 (%LEL), CO, O2, H2S, CO2, PM2.5, T/RH, vibration | `hardware/bom.csv` |
-| Rover patrol | each sub-zone every ≤ 30 min at 1.5 m/s | reference layout |
+| Rover patrol | 1.94 km reference route: ~41 min/cycle at 1.0 m/s; ≤ 30 min needs ≥ 1.6 m/s or 2 rovers | `hardware/calcs.py` |
 | Phase 1 BOM | ≈ ₹57k core (2 wearables, 2 nodes, gateway); ≈ ₹90k with rover-lite | `hardware/bom.csv` |
 
 ## Repository layout
@@ -87,6 +87,7 @@ software/tests/     pytest suite
 software/scripts/   run_demo.py
 hardware/cad/       CadQuery source, STEP/STL, renders
 hardware/bom.csv    itemised BOM with lead times
+hardware/calcs.py   strap-lug stress, battery life, LoRa airtime, rover patrol cycle
 results/            generated figures and logs
 ```
 
